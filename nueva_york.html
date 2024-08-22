@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueva York, EE.UU. - Agencia de Viajes</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg fondo_oscuro text-white">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#"><img class="imagen_icono" src="img/icono_agencia.png"
+                    alt="">WanderQuest</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="destinos.html">Destinos</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="promociones.html">Promociones</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="vuelos.html">Vuelos</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="destino-nueva-york" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Nueva York, EE.UU.</h2>
+            <div class="row">
+                <div class="col-md-8">
+                    <div id="carouselNuevaYork" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/york1.jpeg" data-bs-toggle="modal" data-bs-target="#libertad"
+                                    class="d-block w-100" alt="Estatua de la Libertad">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/york2.jpeg" data-bs-toggle="modal" data-bs-target="#central"
+                                    class="d-block w-100" alt="Central Park">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/york3.jpeg" data-bs-toggle="modal" data-bs-target="#times"
+                                    class="d-block w-100" alt="Times Square">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselNuevaYork"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselNuevaYork"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h3>Descripción</h3>
+                    <p>Nueva York es una ciudad icónica conocida por sus rascacielos, Broadway, y monumentos históricos.
+                        Es el destino perfecto para quienes buscan cultura, entretenimiento y vida urbana vibrante.</p>
+                    <h4>Hoteles Cercanos</h4>
+                    <ul>
+                        <li>The Langham, New York</li>
+                        <li>Four Seasons Hotel New York Downtown</li>
+                        <li>The Greenwich Hotel</li>
+                    </ul>
+                    <h4>Mapa</h4>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24154.292644257945!2d-74.0060159!3d40.712743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a3166eae473%3A0x1a6e2f4504ec6b3!2sNew%20York%2C%20NY!5e0!3m2!1ses!2sus!4v1615568562154!5m2!1ses!2sus"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <h4>Reseñas</h4>
+                    <p>"Nueva York es una ciudad que nunca duerme. ¡Increíble!" - Javier Martínez</p>
+                    <p>"Un destino imprescindible para cualquier amante de la cultura." - Laura Ramírez</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="fondo_oscuro text-white py-3">
+        <div class="container">
+            <div class="row text-center text-md-start">
+                <div
+                    class="col-md-4 d-flex align-items-center justify-content-center justify-content-md-start mb-3 mb-md-0">
+                    <img src="img/icono_agencia.png" alt="Logo" class="img-fluid imagen_icono_f">
+                </div>
+                <div class="col-md-4 d-flex align-items-center justify-content-center text-center mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2024 Agencia de Viajes. Todos los derechos reservados.</p>
+                </div>
+                <div class="col-md-4 d-flex align-items-center justify-content-center justify-content-md-end">
+                    <a href="#" class="text-light fs-2 me-2"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-light fs-2 me-2"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="#" class="text-light fs-2 me-2"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="libertad" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-body p-0 d-flex justify-content-center">
+                    <img src="img/york1.jpeg" class="img-fluid" alt="Imagen ampliada">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="central" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-body p-0 d-flex justify-content-center">
+                    <img src="img/york2.jpeg" class="img-fluid" alt="Imagen ampliada">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="times" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-body p-0 d-flex justify-content-center">
+                    <img src="img/york3.jpeg" class="img-fluid" alt="Imagen ampliada">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

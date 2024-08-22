@@ -1,0 +1,14 @@
+.fondo_oscuro{
+    background-color: #182c44;
+}
+.fondo_boton{
+    background-color: #08b4a4;
+    border-radius: 5px;
+
+}
+.imagen_icono{
+    max-height: 50px;
+}
+.imagen_icono_f{
+    max-height: 150px;
+}
