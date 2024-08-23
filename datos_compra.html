@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dubái, Emiratos Árabes Unidos - Agencia de Viajes</title>
+    <title>Datos de Compra - Agencia de Viajes</title>
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -43,53 +43,53 @@
         </div>
     </nav>
 
-    <section id="destino-dubai" class="py-5">
+    <section class="py-5">
         <div class="container">
-            <h2 class="text-center mb-5">Dubái, Emiratos Árabes Unidos</h2>
+            <h2 class="text-center mb-4">Datos de Compra</h2>
             <div class="row">
-                <div class="col-md-8">
-                    <div id="carouselDubai" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="img/dub1.jpeg" data-bs-toggle="modal" data-bs-target="#burj"
-                                    class="d-block w-100" alt="Burj Khalifa">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/dub2.jpeg" data-bs-toggle="modal" data-bs-target="#playaDubai"
-                                    class="d-block w-100" alt="Playa de Jumeirah">
-                            </div>
+                <div class="col-md-8 offset-md-2">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Información de Pago</h3>
+                            <form id="compra-form">
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre Completo</label>
+                                    <input type="text" class="form-control" id="nombre" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="telefono" class="form-label">Teléfono</label>
+                                    <input type="tel" class="form-control" id="telefono" required>
+                                </div>
+
+                                <div class="mb-3" id="pago-debito" style="display: none;">
+                                    <label for="debito-tarjeta" class="form-label">Número de Tarjeta de Débito</label>
+                                    <input type="text" class="form-control" id="debito-tarjeta" maxlength="16" required>
+                                </div>
+
+                                <div class="mb-3" id="pago-credito" style="display: none;">
+                                    <label for="credito-tarjeta" class="form-label">Número de Tarjeta de Crédito</label>
+                                    <input type="text" class="form-control" id="credito-tarjeta" maxlength="16"
+                                        required>
+                                    <label for="credito-cvc" class="form-label mt-2">CVC</label>
+                                    <input type="text" class="form-control" id="credito-cvc" maxlength="3" required>
+                                </div>
+
+                                <div class="mb-3" id="pago-efectivo" style="display: none;">
+                                    <label for="efectivo-referencia" class="form-label">Referencia de Pago en
+                                        Efectivo</label>
+                                    <input type="text" class="form-control" id="efectivo-referencia" required>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary">Finalizar Compra</button>
+                            </form>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselDubai"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Anterior</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselDubai"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Siguiente</span>
-                        </button>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <h3>Descripción</h3>
-                    <p>Dubái es conocida por su lujo y modernidad. Visita el Burj Khalifa y disfruta de las playas
-                        exóticas y los centros comerciales de alto nivel.</p>
-                    <h4>Hoteles Cercanos</h4>
-                    <ul>
-                        <li>Burj Al Arab Jumeirah</li>
-                        <li>Atlantis The Palm</li>
-                        <li>Armani Hotel Dubai</li>
-                    </ul>
-                    <h4>Mapa</h4>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115044.91530603488!2d55.274274!3d25.276987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5a6a8eb7d1%3A0xd9910d12a2901a0!2sDubai%2C%20Emiratos%20Árabes%20Unidos!5e0!3m2!1ses!2sus!4v1637636466452!5m2!1ses!2sus"
-                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    <h4>Reseñas</h4>
-                    <p>"Dubái es una ciudad increíblemente moderna y lujosa. Las vistas desde el Burj Khalifa son
-                        impresionantes." - Javier Ruiz</p>
-                    <p>"Las playas y centros comerciales en Dubái son de otro nivel. ¡Una experiencia única!" - Claudia
-                        Moreno</p>
                 </div>
             </div>
         </div>
@@ -107,31 +107,12 @@
                 </div>
                 <div class="col-md-4 d-flex align-items-center justify-content-center justify-content-md-end">
                     <a href="#" class="text-light fs-2 me-2"><i class="fab fa-facebook"></i></a>
-                    <a href="#" class="text-light fs-2 me-2"><i class="fa-brands fa-square-x-twitter"></i></a>
-                    <a href="#" class="text-light fs-2 me-2"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-light fs-2 me-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-light fs-2"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
     </footer>
-
-    <div class="modal fade" id="burj" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content bg-transparent border-0">
-                <div class="modal-body p-0 d-flex justify-content-center">
-                    <img src="img/dub1.jpeg" class="img-fluid" alt="Imagen ampliada">
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade" id="playaDubai" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content bg-transparent border-0">
-                <div class="modal-body p-0 d-flex justify-content-center">
-                    <img src="img/dub2.jpeg" class="img-fluid" alt="Imagen ampliada">
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="modal fade" id="inicio" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="inicioLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -198,6 +179,23 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const metodoPago = localStorage.getItem('metodoPago');
+            if (metodoPago === 'debito') {
+                document.getElementById('pago-debito').style.display = 'block';
+            } else if (metodoPago === 'credito') {
+                document.getElementById('pago-credito').style.display = 'block';
+            } else if (metodoPago === 'efectivo') {
+                document.getElementById('pago-efectivo').style.display = 'block';
+            }
+        });
+
+        document.getElementById('compra-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Compra realizada con éxito');
+        });
+    </script>
 </body>
 
 </html>

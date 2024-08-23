@@ -2,94 +2,172 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tokio, Japón - Agencia de Viajes</title>
-    <link rel="stylesheet" href="css/estilos.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tokio, Japón - Agencia de Viajes</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="bg-light">
 
-    <nav class="navbar navbar-expand-lg fondo_oscuro text-white">
-        <div class="container-fluid">
-            <a class="navbar-brand text-white" href="#"><img class="imagen_icono" src="img/icono_agencia.png"
-                    alt="">WanderQuest</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="destinos.html">Destinos</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="promociones.html">Promociones</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="vuelos.html">Vuelos</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <nav class="navbar navbar-expand-lg fondo_oscuro text-white">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="index.html"><img class="imagen_icono" src="img/icono_agencia.png"
+          alt="">WanderQuest</a>
+      <button class="navbar-toggler navbar-dark bg-transparent" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-white" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="destinos.html">Destinos</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="promociones.html">Promociones</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="vuelos.html">Vuelos</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="contacto.html">Contacto</a></li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-outline-light btn-sm ms-2 my-1" data-bs-toggle="modal"
+              data-bs-target="#inicio">Iniciar Sesión</button>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-outline-light btn-sm ms-2 my-1" data-bs-toggle="modal"
+              data-bs-target="#registro">Registrarse</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <section class="py-5">
-      <div class="container">
-        <h2 class="text-center mb-5">Promociones Especiales</h2>
-        <div class="row">
-          <div class="col-md-4 mb-4">
-            <div class="card">
-              <img src="img/paquete1_europa.jpeg" class="card-img-top" alt="Descuento en Paquetes a Europa">
-              <div class="card-body">
-                <h5 class="card-title">Descuento en Paquetes a Europa</h5>
-                <p class="card-text">Aprovecha un 20% de descuento en todos los paquetes a Europa. Reserva antes del 30 de septiembre.</p>
-                <button class="px-3 py-2 border-0 fondo_boton"><a class="btn text-white"
-                  href="detalles_promocion1.html">Ver más</a></button>              </div>
+  <section class="py-5 mb-4">
+    <div class="container">
+      <h2 class="text-center mb-5">Promociones Especiales</h2>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="card">
+            <img src="img/paquete1_europa.jpeg" class="card-img-top" alt="Descuento en Paquetes a Europa">
+            <div class="card-body">
+              <h5 class="card-title">Descuento en Paquetes a Europa</h5>
+              <p class="card-text">Aprovecha un 20% de descuento en todos los paquetes a Europa. Reserva antes del 30 de
+                septiembre.</p>
+              <button class="px-3 py-2 border-0 fondo_boton"><a class="btn text-white"
+                  href="detalles_promocion1.html">Ver más</a></button>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
-            <div class="card">
-              <img src="img/paquete2_asia.jpeg" class="card-img-top" alt="Ofertas en Vuelos a Asia">
-              <div class="card-body">
-                <h5 class="card-title">Ofertas en Vuelos a Asia</h5>
-                <p class="card-text">Descuentos de hasta un 15% en vuelos hacia Tokio y Seúl. ¡No te lo pierdas!</p>
-                <button class="px-3 py-2 border-0 fondo_boton"><a class="btn text-white"
-                  href="detalles_promocion2.html">Ver más</a></button>              </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="card">
+            <img src="img/paquete2_asia.jpeg" class="card-img-top" alt="Ofertas en Vuelos a Asia">
+            <div class="card-body">
+              <h5 class="card-title">Ofertas en Vuelos a Asia</h5>
+              <p class="card-text">Descuentos de hasta un 15% en vuelos hacia Tokio y Seúl. ¡No te lo pierdas!</p>
+              <button class="px-3 py-2 border-0 fondo_boton"><a class="btn text-white"
+                  href="detalles_promocion2.html">Ver más</a></button>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
-            <div class="card">
-              <img src="img/paquete3_sur.jpeg" class="card-img-top" alt="Paquetes Todo Incluido a América del Sur">
-              <div class="card-body">
-                <h5 class="card-title">Paquetes Todo Incluido a América del Sur</h5>
-                <p class="card-text">Descuentos especiales en paquetes todo incluido para Brasil y Argentina. Oferta válida hasta el 15 de octubre.</p>
-                <button class="px-3 py-2 border-0 fondo_boton"><a class="btn text-white"
-                  href="detalles_promocion3.html">Ver más</a></button>              </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+          <div class="card">
+            <img src="img/paquete3_sur.jpeg" class="card-img-top" alt="Paquetes Todo Incluido a América del Sur">
+            <div class="card-body">
+              <h5 class="card-title">Paquetes Todo Incluido a América del Sur</h5>
+              <p class="card-text">Descuentos especiales en paquetes todo incluido para Brasil y Argentina. Oferta
+                válida hasta el 15 de octubre.</p>
+              <button class="px-3 py-2 border-0 fondo_boton"><a class="btn text-white"
+                  href="detalles_promocion3.html">Ver más</a></button>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <footer class="fondo_oscuro text-white py-3">
-      <div class="container">
-        <div class="row text-center text-md-start">
-          <div class="col-md-4 d-flex align-items-center justify-content-center justify-content-md-start mb-3 mb-md-0">
-            <img src="img/icono_agencia.png" alt="Logo" class="img-fluid imagen_icono_f">
-          </div>
-          <div class="col-md-4 d-flex align-items-center justify-content-center text-center mb-3 mb-md-0">
-            <p class="mb-0">&copy; 2024 Agencia de Viajes. Todos los derechos reservados.</p>
-          </div>
-          <div class="col-md-4 d-flex align-items-center justify-content-center justify-content-md-end">
-            <a href="#" class="text-light fs-2 me-2"><i class="fab fa-facebook"></i></a>
-            <a href="#" class="text-light fs-2 me-2"><i class="fa-brands fa-square-x-twitter"></i></a>
-            <a href="#" class="text-light fs-2 me-2"><i class="fab fa-instagram"></i></a>
-          </div>
+  <footer class="fondo_oscuro text-white py-3">
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <div class="col-md-4 d-flex align-items-center justify-content-center justify-content-md-start mb-3 mb-md-0">
+          <img src="img/icono_agencia.png" alt="Logo" class="img-fluid imagen_icono_f">
+        </div>
+        <div class="col-md-4 d-flex align-items-center justify-content-center text-center mb-3 mb-md-0">
+          <p class="mb-0">&copy; 2024 Agencia de Viajes. Todos los derechos reservados.</p>
+        </div>
+        <div class="col-md-4 d-flex align-items-center justify-content-center justify-content-md-end">
+          <a href="#" class="text-light fs-2 me-2"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="text-light fs-2 me-2"><i class="fa-brands fa-square-x-twitter"></i></a>
+          <a href="#" class="text-light fs-2 me-2"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
+  <div class="modal fade" id="inicio" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="inicioLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="inicioLabel">Iniciar Sesión</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cancelar</button>
+          <button type="button" class="btn btn-primary">Confirmar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+  <div class="modal fade" id="registro" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="registroLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="registroLabel">Registrarse</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre Completo</label>
+              <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="password" required>
+            </div>
+            <div class="mb-3">
+              <label for="confirmPassword" class="form-label">Confirmar Contraseña</label>
+              <input type="password" class="form-control" id="confirmPassword" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Registrarse</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cancelar</button>
+          <button type="button" class="btn btn-primary">Confirmar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>

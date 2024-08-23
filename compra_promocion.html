@@ -18,8 +18,8 @@
     <div class="container-fluid">
       <a class="navbar-brand text-white" href="index.html"><img class="imagen_icono" src="img/icono_agencia.png"
           alt="">WanderQuest</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler navbar-dark bg-transparent" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -29,6 +29,14 @@
           <li class="nav-item"><a class="nav-link text-white" href="promociones.html">Promociones</a></li>
           <li class="nav-item"><a class="nav-link text-white" href="vuelos.html">Vuelos</a></li>
           <li class="nav-item"><a class="nav-link text-white" href="contacto.html">Contacto</a></li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-outline-light btn-sm ms-2 my-1" data-bs-toggle="modal"
+              data-bs-target="#inicio">Iniciar Sesión</button>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-outline-light btn-sm ms-2 my-1" data-bs-toggle="modal"
+              data-bs-target="#registro">Registrarse</button>
+          </li>
         </ul>
       </div>
     </div>
@@ -54,46 +62,74 @@
 
                 <div id="europa-options" class="d-none">
                   <label class="form-label">Paquetes a Europa</label>
-                  <select class="form-select">
-                    <option value="paris">Paquete a París</option>
-                    <option value="londres">Paquete a Londres</option>
-                    <option value="roma">Paquete a Roma</option>
+                  <select class="form-select" id="paquete-europa">
+                    <option value="paris" data-precio="1500"
+                      data-detalle="Incluye vuelo a París, hospedaje en Hotel Eiffel, desayuno y tour por la ciudad.">
+                      Paquete a París</option>
+                    <option value="londres" data-precio="1400"
+                      data-detalle="Incluye vuelo a Londres, hospedaje en Hotel London Bridge, desayuno y tour por la ciudad.">
+                      Paquete a Londres</option>
+                    <option value="roma" data-precio="1300"
+                      data-detalle="Incluye vuelo a Roma, hospedaje en Hotel Colosseum, desayuno y tour por la ciudad.">
+                      Paquete a Roma</option>
                   </select>
                 </div>
 
                 <div id="asia-options" class="d-none">
                   <label class="form-label">Vuelos a Asia</label>
-                  <select class="form-select">
-                    <option value="tokio">Vuelo a Tokio</option>
-                    <option value="seul">Vuelo a Seúl</option>
+                  <select class="form-select" id="paquete-asia">
+                    <option value="tokio" data-precio="1200"
+                      data-detalle="Incluye vuelo a Tokio, hospedaje en Hotel Tokyo Tower, desayuno y tour por la ciudad.">
+                      Vuelo a Tokio</option>
+                    <option value="seul" data-precio="1100"
+                      data-detalle="Incluye vuelo a Seúl, hospedaje en Hotel Namsan, desayuno y tour por la ciudad.">
+                      Vuelo a Seúl</option>
                   </select>
                 </div>
 
                 <div id="america-options" class="d-none">
                   <label class="form-label">Paquetes Todo Incluido a América del Sur</label>
-                  <select class="form-select">
-                    <option value="brasil">Paquete a Brasil</option>
-                    <option value="argentina">Paquete a Argentina</option>
+                  <select class="form-select" id="paquete-america">
+                    <option value="brasil" data-precio="1000"
+                      data-detalle="Incluye vuelo a Río de Janeiro, hospedaje en Copacabana Palace, desayuno, almuerzo y cena, y tour por la ciudad.">
+                      Paquete a Brasil</option>
+                    <option value="argentina" data-precio="950"
+                      data-detalle="Incluye vuelo a Buenos Aires, hospedaje en Alvear Palace Hotel, desayuno, almuerzo y cena, y tour por la ciudad.">
+                      Paquete a Argentina</option>
                   </select>
                 </div>
 
-                <div class="mb-3">
-                  <label for="nombre" class="form-label">Nombre Completo</label>
-                  <input type="text" class="form-control" id="nombre" required>
+                <div id="precio-container" class="mb-3 d-none">
+                  <p id="precio" class="fs-4"></p>
+                  <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#detalleModal">Ver
+                    detalles del paquete</button>
                 </div>
+
                 <div class="mb-3">
-                  <label for="email" class="form-label">Correo Electrónico</label>
-                  <input type="email" class="form-control" id="email" required>
+                  <label for="metodo-pago" class="form-label">Método de Pago</label>
+                  <div id="metodo-pago" class="row">
+                    <div class="col-4">
+                      <input type="radio" class="btn-check" name="pago" id="debito" autocomplete="off">
+                      <label class="btn btn-outline-primary w-100" for="debito">
+                        <img src="img/debito.svg" alt="Débito" class="img-fluid"><br>Débito
+                      </label>
+                    </div>
+                    <div class="col-4">
+                      <input type="radio" class="btn-check" name="pago" id="credito" autocomplete="off">
+                      <label class="btn btn-outline-primary w-100" for="credito">
+                        <img src="img/credito.svg" alt="Crédito" class="img-fluid"><br>Crédito
+                      </label>
+                    </div>
+                    <div class="col-4">
+                      <input type="radio" class="btn-check" name="pago" id="efectivo" autocomplete="off">
+                      <label class="btn btn-outline-primary w-100" for="efectivo">
+                        <img src="img/efectivo.svg" alt="Efectivo" class="img-fluid"><br>Efectivo
+                      </label>
+                    </div>
+                  </div>
                 </div>
-                <div class="mb-3">
-                  <label for="telefono" class="form-label">Teléfono</label>
-                  <input type="tel" class="form-control" id="telefono" required>
-                </div>
-                <div class="mb-3">
-                  <label for="mensaje" class="form-label">Mensaje Adicional</label>
-                  <textarea class="form-control" id="mensaje" rows="3"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar Solicitud de compra  </button>
+
+                <button type="submit" class="btn btn-primary">Comprar</button>
               </form>
             </div>
           </div>
@@ -101,7 +137,6 @@
       </div>
     </div>
   </section>
-
   <footer class="fondo_oscuro text-white py-3">
     <div class="container">
       <div class="row text-center text-md-start">
@@ -113,28 +148,136 @@
         </div>
         <div class="col-md-4 d-flex align-items-center justify-content-center justify-content-md-end">
           <a href="#" class="text-light fs-2 me-2"><i class="fab fa-facebook"></i></a>
-          <a href="#" class="text-light fs-2 me-2"><i class="fa-brands fa-square-x-twitter"></i></a>
-          <a href="#" class="text-light fs-2 me-2"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-light fs-2 me-2"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="text-light fs-2"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
     </div>
   </footer>
+  <div class="modal fade" id="detalleModal" tabindex="-1" aria-labelledby="detalleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="detalleModalLabel">Detalles del Paquete</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="detalle-paquete"></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="inicio" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="inicioLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="inicioLabel">Iniciar Sesión</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cancelar</button>
+          <button type="button" class="btn btn-primary">Confirmar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <div class="modal fade" id="registro" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="registroLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="registroLabel">Registrarse</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre Completo</label>
+              <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="password" required>
+            </div>
+            <div class="mb-3">
+              <label for="confirmPassword" class="form-label">Confirmar Contraseña</label>
+              <input type="password" class="form-control" id="confirmPassword" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Registrarse</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cancelar</button>
+          <button type="button" class="btn btn-primary">Confirmar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script>
     document.getElementById('promocion').addEventListener('change', function () {
-      const value = this.value;
-      document.querySelectorAll('#europa-options, #asia-options, #america-options').forEach(function (el) {
-        el.classList.add('d-none');
-      });
-      if (value === 'europa') {
-        document.getElementById('europa-options').classList.remove('d-none');
-      } else if (value === 'asia') {
-        document.getElementById('asia-options').classList.remove('d-none');
-      } else if (value === 'america') {
-        document.getElementById('america-options').classList.remove('d-none');
+      const europaOptions = document.getElementById('europa-options');
+      const asiaOptions = document.getElementById('asia-options');
+      const americaOptions = document.getElementById('america-options');
+      const precioContainer = document.getElementById('precio-container');
+      precioContainer.classList.add('d-none');
+
+      europaOptions.classList.add('d-none');
+      asiaOptions.classList.add('d-none');
+      americaOptions.classList.add('d-none');
+
+      if (this.value === 'europa') {
+        europaOptions.classList.remove('d-none');
+      } else if (this.value === 'asia') {
+        asiaOptions.classList.remove('d-none');
+      } else if (this.value === 'america') {
+        americaOptions.classList.remove('d-none');
       }
     });
+
+    const paquetes = document.querySelectorAll('#paquete-europa, #paquete-asia, #paquete-america');
+    paquetes.forEach(paquete => {
+      paquete.addEventListener('change', function () {
+        const precioContainer = document.getElementById('precio-container');
+        const precio = this.selectedOptions[0].getAttribute('data-precio');
+        const detalle = this.selectedOptions[0].getAttribute('data-detalle');
+
+        if (precio) {
+          precioContainer.classList.remove('d-none');
+          document.getElementById('precio').innerText = `Precio: $${precio}`;
+          document.getElementById('detalle-paquete').innerText = detalle;
+        }
+      });
+    });
+    document.getElementById('promocion-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const metodoPagoSeleccionado = document.querySelector('input[name="pago"]:checked').id;
+      localStorage.setItem('metodoPago', metodoPagoSeleccionado);
+      window.location.href = 'datos_compra.html'; // Reemplaza 'datos_compra.html' con la ruta correcta a tu archivo
+    });
+
   </script>
 </body>
 

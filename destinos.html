@@ -14,21 +14,30 @@
 
 <body class="bg-light">
 
-    <nav class=" navbar navbar-expand-lg fondo_oscuro text-white">
+    <nav class="navbar navbar-expand-lg fondo_oscuro text-white">
         <div class="container-fluid">
-            <a class="navbar-brand text-white" href="index.html"><img class="imagen_icono " src="img/icono_agencia.png"
+            <a class="navbar-brand text-white" href="index.html"><img class="imagen_icono" src="img/icono_agencia.png"
                     alt="">WanderQuest</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler navbar-dark bg-transparent" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link text-white " href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link text-white " href="destinos.html">Destinos</a></li>
-                    <li class="nav-item"><a class="nav-link text-white " href="promociones.html">Promociones</a></li>
-                    <li class="nav-item"><a class="nav-link text-white " href="vuelos.html">Vuelos</a></li>
-                    <li class="nav-item"><a class="nav-link text-white " href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="destinos.html">Destinos</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="promociones.html">Promociones</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="vuelos.html">Vuelos</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-outline-light btn-sm ms-2 my-1" data-bs-toggle="modal"
+                            data-bs-target="#inicio">Iniciar Sesión</button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-outline-light btn-sm ms-2 my-1" data-bs-toggle="modal"
+                            data-bs-target="#registro">Registrarse</button>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -37,7 +46,7 @@
     <div class="container my-5">
         <h2 class="text-center mb-3">Destinos Populares</h2>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                 <div class="card">
                     <img src="img/paris_card_index.jfif" class="card-img-top" data-bs-toggle="modal"
                         data-bs-target="#destino1" alt="Destino 1">
@@ -49,7 +58,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                 <div class="card">
                     <img src="img/tokio_card_index.jfif" class="card-img-top" data-bs-toggle="modal"
                         data-bs-target="#destino2" alt="Destino 2">
@@ -61,7 +70,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                 <div class="card">
                     <img src="img/newyork_card_index.jfif" class="card-img-top" data-bs-toggle="modal"
                         data-bs-target="#destino3" alt="Destino 3">
@@ -74,7 +83,7 @@
                 </div>
             </div>
 
-            <div class="col-md-4 mt-4">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                 <div class="card">
                     <img src="img/destino4.jpeg" class="card-img-top" data-bs-toggle="modal" data-bs-target="#destino4"
                         alt="Destino 4">
@@ -86,7 +95,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mt-4">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                 <div class="card">
                     <img src="img/destino5.jpeg" class="card-img-top" data-bs-toggle="modal" data-bs-target="#destino5"
                         alt="Destino 5">
@@ -98,7 +107,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mt-4">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                 <div class="card">
                     <img src="img/destino6.jpeg" class="card-img-top" data-bs-toggle="modal" data-bs-target="#destino6"
                         alt="Destino 6">
@@ -110,7 +119,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mt-4">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                 <div class="card">
                     <img src="img/destino7.jpeg" class="card-img-top" data-bs-toggle="modal" data-bs-target="#destino7"
                         alt="Destino 7">
@@ -122,7 +131,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mt-4">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
                 <div class="card">
                     <img src="img/destino8.jpeg" class="card-img-top" data-bs-toggle="modal" data-bs-target="#destino8"
                         alt="Destino 8">
@@ -293,7 +302,71 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="inicio" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="inicioLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="inicioLabel">Iniciar Sesión</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cancelar</button>
+                    <button type="button" class="btn btn-primary">Confirmar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="modal fade" id="registro" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="registroLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="registroLabel">Registrarse</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre Completo</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="confirmPassword" class="form-label">Confirmar Contraseña</label>
+                            <input type="password" class="form-control" id="confirmPassword" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Registrarse</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cancelar</button>
+                    <button type="button" class="btn btn-primary">Confirmar</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
